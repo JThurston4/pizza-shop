@@ -11,11 +11,73 @@
 </head>
 
 <body>
-
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+        <form onsubmit="app.controllers.pizzaController.pizzaBuilder(event)">
+          <div class="form-check">
+            <input class="form-check-input" name="pepperoni" type="checkbox" value="" id="Pepperoni">
+            <label class="form-check-label" for="">
+              Pepperoni - $0.75
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="olives" type="checkbox" value="" id="Olives">
+            <label class="form-check-label" for="">
+              Olives - $0.50
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="cheese" type="checkbox" value="" id="Cheese">
+            <label class="form-check-label" for="">
+              Cheese - $0.50
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="mushrooms" type="checkbox" value="" id="Mushrooms">
+            <label class="form-check-label" for="">
+              Mushrooms - $1.00
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="anchovies" type="checkbox" value="" id="Anchovies">
+            <label class="form-check-label" for="">
+              Anchovies - $50,000,000
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="green-peppers" type="checkbox" value="" id="Green-Peppers">
+            <label class="form-check-label" for="">
+              Green Peppers - $1.25
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="pineapple" type="checkbox" value="" id="Pineapple">
+            <label class="form-check-label" for="">
+              Pineapple - $.75
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col-12" id="Total">Total: placeholder</div>
+        <div class="col-12 img"><img src="https://www.cicis.com/media/1138/pizza_trad_pepperoni.png"></div>
+      </div>
+    </div>
+  </div>
 
 
 
   <script src="app/main.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
